@@ -1,0 +1,70 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #686EE2;
+}
+
+.header-section {
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+	-fx-background-color: #5C3E84;
+}
+
+.header-section Label {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+}
+
+.content-section {
+    -fx-padding: 10 20 10 20;
+    -fx-wrap-text: true;
+    -fx-border-width: 1;
+    -fx-border-color: transparent transparent transparent transparent;
+	-fx-spacing: 5px;
+}
+
+.content-section Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-border: 1 1 1 1;
+	-fx-border-width: 1;
+    -fx-border-color: gray black gray black;
+}
+
+.content-section #content-header {
+	-fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 10 0;
+    -fx-font-weight: 700;
+}
+
+.content-section #content {
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+	-fx-text-fill: #ffffff;
+}
+
+.footer-section {
+    -fx-alignment: center;
+    -fx-padding: 10 10 10 10;
+    -fx-border-width: 1;
+    -fx-border-color: transparent transparent transparent transparent;
+	-fx-background-color: #5C3E84;
+}
+
+.footer-section Text {
+	-fx-fill: #ffffff;
+    -fx-alignment: center;
+}
+
+.footer-section Hyperlink {
+   -fx-text-fill: #C0C0C0;
+    -fx-alignment: center;
+}
+
+.footer-section Hyperlink:hover {
+   -fx-text-fill: #eeeeee;
+    -fx-alignment: center;
+}

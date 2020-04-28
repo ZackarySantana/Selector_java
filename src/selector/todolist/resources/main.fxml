@@ -1,0 +1,92 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Hyperlink?>
+
+
+<BorderPane prefHeight="435.0" prefWidth="655.0" xmlns:fx="http://javafx.com/fxml"
+	id="main">
+	<top>
+		<BorderPane styleClass="header-section">
+			<left>
+				<Label id="header-text" text="To Do List"/>
+			</left>
+			<right>
+				<HBox>
+					<children>
+						<Button text="Settings" onAction="#settings">
+							<graphic>
+								<ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="selector/todolist/images/settings_icon.png"/>
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+						<Button text="Go Back" onAction="#goBack">
+							<graphic>
+								<ImageView fitHeight="24" fitWidth="24" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="selector/todolist/images/back_icon.png"/>
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+					</children>
+				</HBox>
+			</right>
+		</BorderPane>
+	</top>
+	<left>
+		<VBox styleClass="sidebar-section" fx:id="sidebaritems">
+			<children>
+				<Label text="Sidebar Item1" onMouseClicked="#sidebar_item"/>
+				<Label text="Add Item" style="-fx-alignment: center; -fx-stroke: #000000; -fx-stroke-width:
+					5px;" onMouseClicked="#sidebar_item"/>
+			</children>
+		</VBox>
+	</left>
+	<center>
+		<BorderPane>
+			<top>
+				<VBox styleClass="content-section">
+					<children>
+						<Label id="content-header" fx:id="content_header" text="Sidebar Item1 Header"/>
+						<Label id="content" fx:id="content" text="Sidebar Item1 Content"/>
+					</children>
+				</VBox>
+			</top>
+			<bottom>
+				<BorderPane>
+					<right>
+						<Button text="Delete" onAction="#delete">
+							<graphic>
+								<ImageView fitHeight="36" fitWidth="36" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="selector/todolist/images/trash_icon.png"/>
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+					</right>
+				</BorderPane>
+			</bottom>
+		</BorderPane>
+	</center>
+	<bottom>
+		<HBox styleClass="footer-section">
+			<children>
+				<TextFlow>
+					<Text text="A basic show program created by" style="-fx-font-style: italic"/>
+					<Hyperlink text="Zackary Santana" style="-fx-font-style: italic" accessibleHelp="https://zackaryjamessantana.com"/>
+				</TextFlow>
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
